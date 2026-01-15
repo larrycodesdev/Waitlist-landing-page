@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Boostsphere.pro — Coming Soon</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div>
+                <h2 class="big">BOOSTSPHERE</h2>
+                <p>We provide secure, high quality social media account growth and smart growth. <span class="headlineText">Whether you're starting a new brand or boosting an existing one, our platform is the best to increase your social media accounts.</span></p>
+            </div>
+
+            <?php if($success): ?>
+                <div class="message"><?=htmlspecialchars($success)?></div>
+            <?php endif; ?>
+            <?php if($error): ?>
+                <div class="error"><?=htmlspecialchars($error)?></div>
+            <?php endif; ?>
+            
+            <form class="waitlist-form" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required><br>
+
+                <button type="submit" class="badge">Join the Waitlist</button>
+            </form>
+        </div>
+
+        <div class="flyer-slot">
+            <img src="images/flyer.jpg" alt="Boostsphere Flyer"/>
+        </div>
+    </div>
+</body>
+</html>
